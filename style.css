@@ -1,0 +1,2170 @@
+
+
+/* Asegurar que la marca esté centrada en todas las pantallas */
+.navbar-brand {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding: 10px 20px; /* Añade un poco de espacio alrededor del enlace */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Reducir tamaño de fuente para pantallas pequeñas */
+        padding: 10px; /* Ajustar el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem; /* Aún más pequeño para pantallas muy pequeñas */
+        padding: 8px; /* Ajuste en pantallas extremadamente pequeñas */
+    }
+}
+
+
+
+
+/* Moviles Bodyyy Margen Para Todooo */
+@media (max-width: 991px) {
+    body {
+        margin: 10px; /* Añadir margen para que el borde se vea en móviles */
+        border: 1px solid #ddd; /* Añadir borde visible */
+    }
+
+    .navbar {
+        margin: 10px; /* Añadir margen para que el borde se vea en móviles */
+        border: 1px solid #ddd; /* Añadir borde visible */
+    }
+
+    .navbar-nav {
+        margin-top: 1rem;
+        border-top: 1px solid #ddd;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+.hero {
+    background: url('ruta/a/tu-fondo.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;
+}
+
+
+.hero {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+
+/* FORMULARIO DE CONTACTO */
+/* Estilo del contenedor */
+/* Contenedor del formulario */
+/* Estilo para el formulario en el hero */
+/* Estilo para la sección del hero */
+#hero-inicio {
+    background: url('img/img20.jpeg') no-repeat center center/cover; /* Fondo con imagen */
+    position: relative;
+    color: #fff;
+    overflow: hidden; /* Para que el contenido no se desborde */
+    padding: 100px 0; /* Espaciado superior e inferior */
+    text-align: center;
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.4); /* Sombra interna sutil para mejorar la visibilidad */
+}
+
+/* Título en el hero */
+#hero-inicio h1 {
+    font-size: 3.5rem; /* Tamaño grande */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    line-height: 1.3; /* Espaciado entre líneas */
+    animation: slide-up 1s ease-out; /* Animación de aparición */
+    margin-top: 150px;
+}
+
+/* Párrafo en el hero */
+#hero-inicio p {
+    font-size: 1.5rem; /* Tamaño de texto adecuado */
+    font-family: 'Arial', sans-serif; /* Fuente clara y legible */
+    font-weight: 300;
+    margin-bottom: 2rem;
+    animation: fade-in 1.5s ease-out; /* Animación suave para el texto */
+}
+
+/* Botón en el hero */
+#hero-inicio .btn-warning {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffb400; /* Color dorado */
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del botón */
+}
+
+/* Cambio de color y sombra del botón al pasar el cursor */
+#hero-inicio .btn-warning:hover {
+    background-color: #ff6600; /* Color de fondo al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    transform: translateY(-3px); /* Sutil movimiento hacia arriba */
+}
+
+/* Animación de deslizamiento hacia arriba para el título */
+@keyframes slide-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de desvanecimiento para el párrafo */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Ajustes generales para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Hero section */
+    #hero-inicio {
+        padding: 60px 0; /* Menos espacio arriba y abajo */
+        background-size: cover; /* Asegura que la imagen de fondo se ajuste */
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3); /* Sombra menos intensa */
+    }
+
+    /* Título en el hero */
+    #hero-inicio h1 {
+        font-size: 2.5rem; /* Tamaño más pequeño */
+        margin-top: 100px; /* Ajuste en la distancia desde el top */
+        letter-spacing: 0.5px; /* Espaciado entre letras más pequeño */
+        line-height: 1.2; /* Espaciado entre líneas reducido */
+    }
+
+    /* Párrafo en el hero */
+    #hero-inicio p {
+        font-size: 1.2rem; /* Tamaño de texto más pequeño */
+        margin-bottom: 1.5rem; /* Menos margen en la parte inferior */
+    }
+
+    /* Botón en el hero */
+    #hero-inicio .btn-warning {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+        padding: 10px 25px; /* Menos espacio en los bordes del botón */
+        border-radius: 25px; /* Borde más redondeado */
+    }
+
+    /* Cambio de color y sombra del botón al pasar el cursor */
+    #hero-inicio .btn-warning:hover {
+        background-color: #ff6600; /* Cambio de color igual */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+        transform: translateY(-2px); /* Sutil movimiento hacia arriba */
+    }
+}
+
+
+
+
+
+
+
+
+    /* Animación para el título */
+    @keyframes fadeInUpTitle {
+        0% {
+            opacity: 0;
+            transform: translateY(30px); /* Título entra desde abajo */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* Título se posiciona en su lugar */
+        }
+    }
+
+
+
+
+
+
+
+
+/* Estilos de Navbar */
+
+/* boton de cotizar en el nav */
+#cotizar-link {
+    background-color: #ff6600; /* Color de fondo llamativo */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    transition: all 0.3s ease; /* Animación suave en hover */
+}
+
+#cotizar-link:hover {
+    background-color: #ff3300; /* Cambiar color de fondo al pasar el mouse */
+    color: #fff; /* Color del texto */
+    transform: scale(1.1); /* Agrandar ligeramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+@media (max-width: 768px) {
+    /* Seleccionamos solo el enlace con el ID 'cotizar-link' */
+    #cotizar-link {
+        animation: moverCotizar 2s infinite alternate;
+    }
+
+    /* Animación de movimiento para el enlace */
+    @keyframes moverCotizar {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateX(10px);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(-10px);
+            opacity: 1;
+        }
+    }
+}
+
+
+/* mensaje del boton cotizar del nav */
+.mensaje {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #34b7f1; /* Color azul vibrante */
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100px); /* Inicia fuera de pantalla */
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    z-index: 9999;
+    opacity: 0; /* Inicia invisible */
+}
+
+.mensaje.mostrar {
+    transform: translateY(20px); /* Aparece desde arriba */
+    opacity: 1; /* Se hace visible */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+.mensaje.mostrar-shake {
+    animation: shake 0.5s ease infinite; /* Efecto de sacudida */
+}
+
+@media (max-width: 768px) {
+    .mensaje {
+        position: absolute;
+        bottom: 40px; /* Posiciona el mensaje encima del botón */
+        right: 0;
+        background-color: transparent; /* El fondo es transparente */
+        color: #070707;
+        font-size: 15px; /* Tamaño de la fuente */
+        padding: 5px 10px; /* Ajusta el tamaño del cuadro */
+        border: none; /* Elimina el borde */
+        border-radius: 5px; /* Ligero redondeo en las esquinas */
+        box-shadow: none; /* Elimina la sombra */
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        z-index: 9999;
+    }
+    
+    .mensaje.mostrar {
+        display: block;
+        opacity: 1;
+        transform: translateX(-10px); /* Ligeramente hacia la izquierda */
+        top: 200px;
+    }
+    
+    .mensaje::after {
+        content: '⮟'; /* Flecha hacia abajo */
+        position: absolute;
+        top: -10px; /* Posiciona la flecha encima del mensaje */
+        left: 50%;
+        transform: translateX(-50%); /* Centra la flecha horizontalmente */
+        font-size: 18px;
+        color: #ff5f5f; /* Color de la flecha */
+    }
+}    
+
+
+
+
+.navbar {
+    background: linear-gradient(to bottom, #f8f6f6af, #080808);
+    padding: 0.8rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo cuando el navbar está fijo */
+.fixed-top {
+    background: linear-gradient(to bottom, #030303f6, #f5f1f1);
+    box-shadow: 0 4px 8px #050505; /* Sombra para dar profundidad */
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+}
+
+/* Marca del sitio con colores elegantes */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el logo */
+.navbar-brand {
+    font-size: 2.5rem; /* Tamaño grande para el logo */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+    font-weight: bold; /* Fuente en negrita para resaltar */
+    color: #343a40; /* Color oscuro para el texto principal */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    position: relative; /* Para poder usar efectos de sombra y animación */
+    text-transform: uppercase; /* Poner el texto en mayúsculas */
+    transition: all 0.3s ease-in-out; /* Suave transición en todos los efectos */
+}
+
+/* Estilo para el texto 'Naranjo' */
+.navbar-brand .text-warning {
+    color: #ffb400; /* Color dorado brillante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil para el texto */
+    position: relative; /* Para el efecto de animación */
+}
+
+/* Efecto de animación para el logo */
+.navbar-brand:hover {
+    color: #007bff; /* Color azul brillante cuando se pasa el cursor */
+    transform: scale(1.05); /* Un pequeño aumento de tamaño */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); /* Añadir más sombra al pasar el cursor */
+}
+
+/* Efecto de animación para la parte del texto 'Naranjo' */
+.navbar-brand .text-warning:hover {
+    color: #ff6600; /* Cambio de color más brillante cuando se pasa el cursor */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más fuerte para resaltar */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba al pasar el cursor */
+}
+
+/* Agregar un borde dinámico */
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffb400; /* Borde dorado */
+    bottom: -5px; /* Posición justo debajo del texto */
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; /* Transición para el borde */
+}
+
+/* Activar el borde cuando se pasa el cursor */
+.navbar-brand:hover::after {
+    transform: scaleX(1); /* Expandir el borde cuando el cursor está sobre el logo */
+}
+
+/* Efecto de destello para el logo */
+.navbar-brand:hover .text-warning {
+    animation: shimmer 1.5s infinite; /* Animación de destello en el texto */
+}
+
+/* Definición de la animación de destello */
+@keyframes shimmer {
+    0% {
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+/* Menú y enlaces */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #555;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffb400;
+    background-color: rgba(255, 180, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Botón de menú móvil */
+.navbar-toggler {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f8f9fa; /* Fondo claro para el botón */
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.navbar-toggler:hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Ligera expansión al pasar el cursor */
+}
+
+.navbar-toggler i {
+    font-size: 21px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
+    background-color: #ffffff; /* Fondo del ícono */
+    padding: 5px; /* Espacio alrededor del ícono */
+}
+
+
+/* Dropdown estilos */
+/* Estilo para el dropdown cuando se despliega */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Estilo predeterminado para el dropdown (oculto por defecto) */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px); /* Comienza ligeramente desplazado hacia arriba */
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 10px 0;
+}
+
+/* Efecto de transición para cada item del menú */
+.dropdown-item {
+    opacity: 0;
+    transform: translateX(-20px); /* Desplazamiento inicial hacia la izquierda */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: #007bff; /* Color de texto inicial */
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto de aparición para los items cuando el dropdown se despliega */
+.nav-item.dropdown:hover .dropdown-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Cambio de color de fondo y texto al pasar el cursor */
+.dropdown-item:hover {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cambio a cursor de mano */
+}
+
+/* Estilo del botón de "Servicios" */
+.nav-link.dropdown-toggle {
+    color: #343a40; /* Color de texto */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 20px;
+    transition: color 0.3s ease;
+}
+
+/* Cambio de color al pasar el cursor sobre el "Servicios" */
+.nav-link.dropdown-toggle:hover {
+    color: #007bff; /* Color de texto al pasar el ratón */
+}
+
+/* Efectos de transición en enlaces */
+.navbar-nav .nav-link,
+.dropdown-item {
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+    transform: translateY(-2px);
+}
+
+.nav-item .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espacio entre los íconos */
+    font-size: 1em; /* Ajuste del tamaño de fuente */
+    background: linear-gradient(to right, #f0e3e31c,#0e0d0df1 );
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para hover */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.nav-item .btn:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento al hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada al hover */
+}
+
+.nav-item .btn i {
+    font-size: 1.2em; /* Ajuste del tamaño de los íconos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NUESTROS SERVICIOS */
+#servicios{
+    background: linear-gradient(to right, #f8f6f6af, #080808);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    background: linear-gradient(135deg, #333, #44444479);
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3); /* Sombra amarilla suave */
+}
+
+.service-card i {
+    color: #ffc107;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover i {
+    transform: rotate(15deg) scale(1.2); /* Rotación y escala ligera al hacer hover */
+}
+
+h2.text-center {
+    color: white !important; /* Forzar color blanco */
+    text-shadow: none !important; /* Elimina sombras */
+    font-size: 2rem !important; /* Ajusta el tamaño */
+    font-weight: normal !important; /* Grosor normal */
+}
+
+
+
+.service-divider {
+    width: 50%;
+    margin: 15px auto;
+    border-top: 2px solid #ffc107;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.service-card .btn {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.service-card .btn:hover {
+    background-color: #e0a800;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(224, 168, 0, 0.4); /* Sombra en el botón */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección de cotización */
+.cotizar-con-nosotros {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #c3dfe01c, #e1ebed25);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.post {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    animation: fadeInUp 1s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-perfil h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.info-perfil h3 a {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+.info-perfil h3 a:hover {
+    text-decoration: underline;
+}
+
+.info-perfil p {
+    margin: 0;
+    font-size: 14px;
+    color: #ff6600;
+}
+
+.contenido h2 {
+    font-size: 24px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contenido p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.destacado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+.btn-cotizar {
+    display: inline-block;
+    background: linear-gradient(90deg, #42a5f5, #478ed1);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(66, 165, 245, 0.8);
+    animation: slideLeftRight 3s infinite ease-in-out; /* Movimiento continuo */
+}
+
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Mueve el botón a la derecha */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn-cotizar:hover {
+    background: linear-gradient(90deg, #478ed1, #42a5f5);
+    box-shadow: 0 8px 20px rgba(66, 165, 245, 1);
+    transform: scale(1.1);
+}
+
+.imagen-post {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.imagen-post img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.imagen-post img:hover {
+    transform: scale(1.05);
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 24px;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.acciones i {
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.acciones i:hover {
+    color: #478ed1;
+    transform: scale(1.2);
+}
+
+.acciones {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button span {
+    margin-left: 5px;
+}
+
+
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* Animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el formulario */
+/* Estilos para el formulario */
+/* Título del formulario */
+#Cotizar h2 {
+    font-size: 2rem;  /* Título más grande */
+    color: #ffcc00;  /* Título dorado */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  /* Mejor sombra */
+    animation: fadeInDown 1.5s ease;
+    margin-bottom: 40px;  /* Espacio debajo del título */
+    text-align: center;  /* Centrado del título */
+    filter: drop-shadow(2px 2px 10px rgba(17, 17, 17, 0.952));
+}
+
+/* Estilo del formulario */
+#miFormulario {
+    background-color: #fff;  /* Fondo blanco para el formulario */
+    padding: 40px;  /* Aumentar el padding */
+    border-radius: 15px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para el formulario */
+    max-width: 800px;  /* Limitar el tamaño del formulario */
+    margin: 0 auto;  /* Centrar el formulario */
+    animation: fadeIn 1s ease;
+    filter: drop-shadow(2px 2px 10px rgba(17, 17, 17, 0.952));
+}
+
+#miFormulario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(3, 58, 238, 0.973); /* Sombra más pronunciada al pasar el cursor */
+    background: linear-gradient(to bottom, rgba(240, 240, 240, 0.9), rgba(4, 91, 221, 0.7), rgba(9, 88, 236, 0.8));
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente oscuro para los campos */
+    background: linear-gradient(to right, white,#050505ab );
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+}
+
+/* Campos del formulario */
+#miFormulario .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#miFormulario label {
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre ícono y texto */
+}
+
+
+
+#miFormulario input:focus,
+#miFormulario select:focus,
+#miFormulario textarea:focus {
+    border-color: #ffcc00; /* Borde dorado al enfocarse */
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+/* Botón de enviar */
+#miFormulario .btn {
+    background: linear-gradient(135deg, #ffcc00, #ff8800); /* Gradiente dorado-anaranjado */
+    border: none;
+    color: #000; /* Texto negro para contraste */
+    padding: 15px 20px;
+    font-size: 1.2rem; /* Texto más grande */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    width: 100%; /* Botón de ancho completo */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px rgba(17, 17, 17, 0.952));
+
+}
+
+#miFormulario .btn:hover {
+    background: linear-gradient(135deg, #ff8800, #ffcc00); /* Cambia gradiente al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(255, 136, 0, 0.7); /* Efecto de luz */
+}
+
+/* Movimiento en los íconos */
+#miFormulario i {
+    margin-right: 8px;
+    color: #ffcc00; /* Iconos dorados */
+    font-size: 1.5rem; /* Hacer los iconos más grandes */
+    transition: transform 0.3s ease, color 0.3s ease;
+    filter: drop-shadow(2px 2px 0px rgba(17, 17, 17, 0.952));
+
+}
+
+#miFormulario .btn:hover i {
+    transform: scale(1.3) rotate(15deg);
+    color: #000; /* Cambia a negro al pasar el mouse */
+}
+
+/* Estilos para la flecha en los servicios */
+#tipoServicio::after {
+    content: " ➔"; /* Añadir la flecha */
+    font-size: 1.5rem; /* Tamaño más grande */
+    color: #ffcc00; /* Color dorado de la flecha */
+    margin-left: 10px; /* Espacio después del texto */
+    pointer-events: none; /* Flecha no interactiva */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Movimiento en los íconos */
+#miFormulario i {
+    margin-right: 8px;
+    color: #ffcc00; /* Iconos dorados */
+    font-size: 1.5rem; /* Hacer los iconos más grandes */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#miFormulario .btn:hover i {
+    transform: scale(1.3) rotate(15deg); /* Escala y rotación al pasar el mouse */
+    color: #000; /* Cambia a negro al pasar el mouse */
+}
+
+/* Animación de los iconos */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Posición original */
+    }
+    40% {
+        transform: translateY(-10px); /* Subir */
+    }
+    60% {
+        transform: translateY(-5px); /* Subir un poco menos */
+    }
+}
+
+/* Animación aplicada a los iconos */
+#miFormulario i {
+    animation: bounce 2s infinite; /* Repetición infinita */
+}
+
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de los iconos */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Mejoras para pantallas pequeñas */
+@media (max-width: 768px) {
+    #miFormulario label {
+        font-size: 14px;
+    }
+    #miFormulario select {
+        font-size: 14px;
+    }
+    #miFormulario .form-group::after {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo de la sección hero */
+/* Estilos generales para el encabezado hero */
+.hero-section {
+    background: url('img/img20.jpeg') no-repeat center center;
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
+    position: relative;
+    color: #fff;
+    text-align: center; /* Centra el texto */
+    padding: 100px 20px; /* Añadir espacio alrededor del texto */
+    min-height: 70vh; /* Establecer una altura mínima (puedes ajustar este valor) */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    #hero-inicio {
+        background: url('img/img20.jpeg') no-repeat center center/cover;
+        position: relative;
+        color: #fff;
+        min-height: 10vh; /* Ajustar según sea necesario */
+        padding: 0; /* Sin relleno interno */
+        margin: 0 10px; /* Margen a los lados para que no cubra toda la pantalla */
+        display: flex; /* Asegurar que el contenido esté centrado */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        text-align: center; /* Alinear texto en el centro */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco con un poco de transparencia */
+        border-radius: 8px; /* Bordes redondeados para un efecto más agradable */
+    }
+
+    .hero-section {
+        margin: 0 auto; /* Centrar el elemento */
+        max-width: 180%; /* Limitar el ancho máximo al 80% de la pantalla */
+        padding: 0; /* Sin relleno interno */
+        font-size: 0.9rem; /* Tamaño de letra ajustable para móviles */
+    }
+}
+
+
+
+/* Estilos para el texto en el encabezado hero */
+.hero-section h1 {
+    font-size: 3rem; /* Ajusta el tamaño del encabezado */
+    margin-bottom: 20px; /* Aumentar el margen inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* Ajusta el tamaño del párrafo */
+    line-height: 1.5; /* Aumentar el espacio entre líneas */
+    max-width: 800px; /* Limitar el ancho para mejorar la legibilidad */
+    margin: 0 auto; /* Centrar el párrafo */
+}
+
+/* Estilo para las tarjetas de servicios */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* Estilo para la galería */
+/* Estilo para la galería */
+/* Contenedor de la galería */
+#galeria{
+    background: linear-gradient(to right, #080808,#f8f6f6af );
+}
+
+.grid-gallery {
+    display: grid; /* Activar Grid Layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Aumentar el tamaño mínimo de las columnas */
+    gap: 15px; /* Espacio entre elementos de la grid */
+    padding: 20px; /* Espaciado interno */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(169, 169, 169, 0.6), rgba(211, 211, 211, 0.4), rgba(255, 255, 255, 1)) !important;
+    border-radius: 15px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los elementos de la grid */
+.grid-item {
+    overflow: hidden; /* Asegurar que no se desborden */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre las imágenes */
+    transition: transform 0.3s ease; /* Transición suave */
+    border: 2px solid #e0e0e0; /* Borde de los elementos */
+    border-radius: 10px; /* Bordes redondeados para cada elemento */
+    background-color: white; /* Fondo blanco para cada elemento */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra en los elementos */
+}
+
+/* Estilo para las imágenes dentro de la grid */
+.grid-item img {
+    width: 100% !important; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100% !important; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover !important; /* La imagen cubrirá el contenedor sin perder su proporción */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para la imagen */
+.grid-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el cursor */
+    border-color: #867572; /* Cambiar el color del borde al pasar el cursor */
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.5); /* Sombra más prominente al hacer hover */
+}
+
+/* Estilo del modal */
+.modal-body {
+    text-align: center; /* Centrar la imagen en el modal */
+    background-color: #ffffff; /* Fondo blanco para el modal */
+    border-radius: 10px; /* Bordes redondeados para el modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+}
+
+/* Asegúrate de que la imagen dentro del modal se ajuste correctamente */
+#modalImage {
+    max-width: 100%;
+    max-height: 80vh; /* Ajustar altura máxima */
+    margin: 0 auto; /* Centrar la imagen */
+    display: block;
+}
+
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+    }
+
+    .grid-item img {
+        max-width: 100%; /* Asegurar que no se desborden */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+}
+
+@media (max-width: 768px) {
+    #galeria {
+        margin: 0 15px; /* Margen a los lados para no cubrir toda la pantalla */
+        border-radius: 8px; /* Bordes redondeados */
+        overflow: hidden; /* Para mantener los bordes dentro de la sección */
+    }
+}
+
+
+
+
+
+
+
+
+/* BENEFICIOSSS */
+#beneficios{
+    background: linear-gradient(to right, #080808,#f8f6f6af );
+}
+
+.benefit-card {
+    background: linear-gradient(to right, #0f0f0fb2,#fdfafafa ,#0505058f );
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px; /* Bordes redondeados más suaves */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Para efectos de posición */
+    overflow: hidden; /* Para manejar el contenido desbordado */
+}
+
+.benefit-card:hover {
+    transform: scale(1.05); /* Efecto de escalado */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.benefit-card i {
+    font-size: 3rem; /* Tamaño del ícono */
+    color: #ffc107; /* Color dorado para los íconos */
+    transition: transform 0.3s; /* Animación suave para el ícono */
+}
+
+.benefit-card:hover i {
+    transform: rotate(15deg); /* Rotación suave al hacer hover */
+}
+
+.benefit-card h5 {
+    font-weight: bold; /* Hacer el título más destacado */
+    color: #343a40; /* Color del texto del título */
+}
+
+.benefit-card p {
+    color: #6c757d; /* Color gris claro para el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Adicionalmente, puedes agregar un efecto de bordes en la parte superior */
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60%;
+    height: 5px; /* Grosor del borde */
+    background: #ffc107; /* Color dorado para el borde */
+    transform: translateX(-50%);
+}
+
+
+/* TITULOS  */
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    background-color: #ffc10749; /* Fondo amarillo */
+    color: #000; /* Texto negro */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: rgba(128, 128, 128, 0.7);
+    transform: translate(6px, 6px);
+    filter: blur(2px);
+}
+
+.text-center {
+    text-align: center;
+}
+
+#parrafo{
+    color: black;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .benefit-card {
+        padding: 15px !important; /* Reducir padding */
+        margin: -25px !important; /* Asegurar que el margen sea consistente entre todas las tarjetas */
+        box-shadow: 0 2px 10px rgba(226, 5, 5, 0.15) !important; /* Sombra más ligera */
+        border-radius: 10px !important; /* Bordes menos redondeados */
+        transform: scale(0.75) !important; /* Escalado ligeramente más pequeño */
+        box-sizing: border-box !important; /* Para evitar que el padding y el margen afecten el tamaño total */
+    }
+
+    .benefit-card h5 {
+        font-size: 1.3rem !important; /* Tamaño más pequeño para el título */
+    }
+
+    .benefit-card p {
+        font-size: 1.0rem !important; /* Reducir texto */
+        line-height: 1.4 !important; /* Ajustar el espaciado */
+    }
+
+    .benefit-card i {
+        font-size: 3rem !important; /* Tamaño reducido del ícono */
+    }
+
+    /* Margen envolvente */
+    .benefit-card-container {
+        padding: 10px !important;
+        margin: 5px auto !important; /* Asegurar que las tarjetas se peguen más */
+        border-radius: 12px !important; /* Bordes suaves */
+        background: linear-gradient(135deg, #0b1fd3, #0d78e4) !important; /* Fondo con gradiente sutil */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+        display: flex !important; /* Usar flexbox para organización */
+        flex-wrap: wrap !important; /* Permitir que las tarjetas se ajusten a múltiples líneas */
+        justify-content: space-between !important; /* Espaciado uniforme entre las tarjetas */
+    }
+}
+
+
+
+
+
+
+
+
+/*GALERIA DOS*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(169, 169, 169, 0.6), rgba(211, 211, 211, 0.4), rgba(255, 255, 255, 1)) !important;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.tarjeta {
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff6b73, #ff000d);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+    opacity: 0; /* Comienza invisible */
+    animation: slideIn 0.5s forwards; /* Añade la animación */
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.tarjeta:hover img {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(211, 211, 211, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ff000d;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Animación para la aparición de tarjetas */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0; /* Invisible al inicio */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; /* Totalmente visible al final */
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(50% - 10px); /* Dos tarjetas por fila */
+        height: 200px; /* Reducir altura */
+    }
+
+    .tarjeta img {
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  PREGUNTAS FRECUENTES  */
+@media (max-width: 768px) {
+    #faq {
+        margin: 0 5%; /* Margen a los lados para no cubrir toda la pantalla */
+        max-width: 90%; /* Limitar el ancho máximo al 90% del ancho de la pantalla */
+        border-radius: 8px; /* Bordes redondeados para un efecto más agradable */
+        overflow: hidden; /* Para mantener los bordes dentro del contenedor */
+        border: 1px solid #ccc; /* Agregar un borde para que sea visible */
+        padding: 20px; /* Añadir un poco de relleno interno */
+        background-color: white; /* Fondo blanco para que el borde sea más visible */
+    }
+}
+
+
+
+
+
+
+/* Efecto de brillos */
+.imagen:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.imagen:hover:before {
+    opacity: 1;
+    animation: glow 1.5s infinite linear;
+}
+
+@keyframes glow {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+
+
+/* Estilo para el footer */
+/* Footer estilos */
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+    /* Selecciona solo los enlaces dentro del footer */
+    footer .navbar-nav .nav-item {
+        animation: moverEnlaces 2s infinite alternate;
+    }
+
+    /* Animación de movimiento */
+    @keyframes moverEnlaces {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateX(10px);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(-10px);
+            opacity: 1;
+        }
+    }
+}
+
+
+/* Animación para mantener el botón en movimiento */
+@keyframes movimientoBoton {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(5px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateX(-5px);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateX(5px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.move-btn {
+    animation: movimientoBoton 1.5s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Suaviza el movimiento */
+}
+
+/* Efecto de hover para cuando el usuario pasa el ratón por encima */
+.move-btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+
+
+.footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(211, 211, 211, 0.6), rgba(128, 128, 128, 0.5), rgb(3, 3, 3)) !important;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffb400;
+}
+
+/* Iconos de redes sociales */
+.footer .fab {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .fab:hover {
+    color: #ffb400;
+    transform: scale(1.1);
+}
+
+/* Distribución en dispositivos grandes */
+@media (min-width: 768px) {
+    .footer .navbar-nav {
+        display: flex;
+    }
+    .footer .navbar-nav .nav-link {
+        margin: 0 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+/* Ajustes en dispositivos móviles */
+@media (max-width: 768px) {
+    .footer h5 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 0 5%; /* Margen a los lados para que no cubra toda la pantalla */
+        max-width: 90%; /* Limitar el ancho máximo al 90% del ancho de la pantalla */
+        border-radius: 15px; /* Bordes redondeados para un efecto más agradable */
+        border: 1px solid #ccc; /* Agregar un borde para que sea visible */
+        background: rgba(0, 0, 0, 0.8); /* Mantener el fondo oscuro con un poco de transparencia */
+        overflow: hidden; /* Asegurarse de que el contenido se mantenga dentro del borde */
+        padding: 0; /* Quitar el padding */
+    }
+}
+
+
+
+
+
+
+.benefit-card {
+    border: 2px solid #FFA500; /* Borde color naranja */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición suave */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px); /* Movimiento al pasar el cursor */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más profunda al hacer hover */
+}
+
+.card-title {
+    font-family: 'Arial Black', sans-serif; /* Fuente negrita y llamativa */
+    color: #FFA500; /* Color de texto */
+}
+
+.card-text {
+    font-family: 'Verdana', sans-serif; /* Fuente más amigable */
+    color: #333; /* Color de texto secundario */
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 1; /* Termina visible */
+    }
+}
+
+
+
+
+
+
+/* Botón de WhatsApp */
+/* Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 70px; /* Cambia de 20px a 80px o ajusta según el tamaño del menú */
+    left: 20px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animación en hover */
+.whatsapp-button:hover {
+    background-color: #1ebd5b;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 125px; /* Ajusta según el tamaño del menú inferior */
+        left: 15px; /* Reduce el margen para pantallas pequeñas */
+        padding: 0.6rem; /* Tamaño más compacto */
+        font-size: 1.6rem; /* Ajusta el tamaño del icono/texto */
+    }
+}
+
+
+/* Animación de pulso para llamar la atención */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.whatsapp-button {
+    animation: pulse 2s infinite;
+}
+
+
+
+/*  ICONOS  */
+/* Estilos de los íconos sociales */
+.social-icons {
+    display: flex; /* Usar Flexbox para la alineación */
+    justify-content: center; /* Centrar los íconos en la fila */
+    gap: 125px; /* Espacio entre los íconos */
+    margin: 20px 0; /* Margen superior e inferior para separar del contenido */
+    opacity: 0; /* Comenzar oculto para el efecto de entrada */
+    transform: translateX(100%); /* Comenzar fuera de la vista (a la derecha) */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Suave transición para la entrada */
+}
+
+/* Estilos de cada ícono */
+.social-icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #fff; /* Color del ícono */
+    background-color: #050505; /* Color de fondo */
+    border-radius: 50%; /* Esquinas totalmente redondeadas */
+    padding: 15px; /* Espacio interno */
+    transition: all 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Sin subrayado */
+    width: 60px; /* Ancho fijo */
+    height: 60px; /* Alto fijo */
+    display: flex; /* Usar Flexbox para centrar el ícono */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+}
+
+/* Cambios en el hover */
+.social-icon:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Colores específicos */
+.social-icon.facebook {
+    background-color: #6980b1; /* Color específico para Facebook */
+}
+
+.social-icon.twitter {
+    background-color: #e5e9eb; /* Color específico para Twitter */
+    color: #1DA1F2; /* Color del ícono por defecto (azul de Twitter) */
+}
+
+.social-icon.twitter:hover {
+    background-color: #fff; /* Color de fondo al pasar el mouse */
+    color: #1DA1F2; /* Mantener el color del ícono de Twitter */
+}
+
+.social-icon.instagram {
+    background-color: #e1306c; /* Color específico para Instagram */
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5; /* Color específico para LinkedIn */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 15px; /* Menor espacio entre los íconos en pantallas pequeñas */
+    }
+
+    .social-icon {
+        width: 50px; /* Ancho más pequeño */
+        height: 50px; /* Alto más pequeño */
+        font-size: 20px; /* Tamaño del ícono más pequeño */
+        padding: 10px; /* Menos espacio interno */
+    }
+}
+
+/* Animación de movimiento constante */
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Levantar un poco hacia arriba */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a cada ícono */
+.social-icon {
+    animation: movimiento 1.5s ease-in-out infinite; /* Aplicar la animación */
+}
+
+
+
+
+/* redes sociales de footer  */
+.social-links a {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #1da1f2, #007bb5); /* Gradiente de color */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a:hover {
+    background: linear-gradient(45deg, #007bb5, #1da1f2);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+/*  FLECHA DE REGRESO AL INICIO  */
+.back-to-top {
+    position: fixed;
+    bottom: 70px; /* Cambia de 20px a 80px o ajusta según el tamaño del menú */
+    right: 20px;
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top:hover {
+    background-color: #ffa500;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+    .back-to-top {
+        bottom: 125px; /* Ajusta el espacio según el tamaño del menú inferior */
+        right: 15px; /* Puedes modificarlo si necesitas más margen en móviles */
+        padding: 12px; /* Un tamaño más compacto para pantallas pequeñas */
+        font-size: 20px; /* Reduce el tamaño del texto/icono */
+    }
+}
+
+
+
+/* Add animation for smooth transition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-to-top.show {
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/* menu FIJO */
+/* Estilos para el menú inferior */
+#menu-inferior {
+    position: fixed;
+    bottom: 20px; /* Espacio desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Ajuste al 90% del ancho para un buen margen */
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 10px 0;
+    border-radius: 20px; /* Bordes redondeados similares a un iPhone */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para efecto de flotación */
+}
+
+.icono-menu-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Ancho fijo para evitar que se estiren */
+    height: 60px; /* Alto fijo para mantener la proporción */
+    font-size: 2rem; /* Tamaño de los íconos */
+    color: #ffffff; /* Color de los íconos */
+    border-radius: 30%; /* Bordes completamente redondeados */
+    background: linear-gradient(145deg, #36d1dc, #5b86e5); /* Degradado en tonos azul y turquesa */
+    box-shadow: 
+        5px 5px 15px #00000055, 
+        -5px -5px 15px #ffffff55, 
+        10px 10px 25px #00000055, 
+        -10px -10px 25px #ffffff55; /* Doble sombra */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono-menu-inferior:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+    color: #ffdfdf; /* Cambio de color del ícono al pasar el mouse */
+}
+#icono1 i {
+    color: rgb(255, 187, 0) !important; /* Cambia el color del ícono a rojo sin importar otros estilos */
+}
+
+
+
+
+/* Estilos para el menú desplegable */
+/* Estilos para el menú desplegable */
+.menu-desplegable {
+    position: fixed;
+    top: 30%; /* Ajusta la distancia desde la parte superior para centrar el menú */
+    left: 10%;
+    width: 80%; /* El menú ocupará el 80% del ancho de la pantalla */
+    height: 50%; /* El menú cubrirá solo la mitad de la pantalla */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra más pequeña */
+    z-index: 200;
+}
+
+/* Estilos para los ítems del menú */
+.menu-item {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 10px 0;
+    text-decoration: none;
+    width: 80%; /* Ancho de los ítems ajustado al 80% */
+    text-align: center;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra más pequeña para los ítems */
+    transition: background-color 0.3s, transform 0.3s; /* Transición de color y transformación */
+}
+
+
+/* Efecto al pasar el cursor */
+.menu-item:hover {
+    background-color: #f0f0f0; /* Cambio de color al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+
+
+.menu-item i {
+    margin-right: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Menu Desplegable */
+
+
+
+
+
+
+/* Esconde el menú en pantallas de portátiles y otros dispositivos de mayor tamaño */
+@media (min-width: 1025px) {
+    #menu-inferior {
+        display: none !important;
+    }
+}
+
+    /* Ocultar el menú para pantallas grandes (escritorio) */
+    @media (min-width: 768px) {
+        .menu-flotante-inferior {
+            display: none;
+        }
+    }
+    
+
+
+
