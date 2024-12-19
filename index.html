@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubiertas Naranjo Zea</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Agregar AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <!-- Script de AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+
+</head>
+<body>
+
+   
+   
+    
+
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light menu-especifico">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ri-menu-line" style="font-size: 21px; color: #ffffff; background-color: #080808; padding: 5px; box-shadow: 0 4px 6px rgba(241, 240, 240, 0.6); border-radius: 15%; font-weight: bold;"></i>
+        </button>
+        
+        
+        
+        <a class="navbar-brand mx-auto" href="https://www.facebook.com/profile.php?id=100089402317987&locale=es_LA">
+            Cubiertas <span class="text-warning">Naranjo</span>Zea
+        </a>
+
+
+        <li class="nav-item">
+            <a class="btn btn-primary d-flex align-items-center" href="contactoRapido.html">
+              <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+              <i class="fas fa-user" style="margin-right: 8px;"></i>
+              <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> Contactanos Rápido
+            </a>
+          </li>
+          
+
+          
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contactoRapido.html">
+                      <i class="fa fa-home text-white fa-lg" style="border: 2px solid rgb(252, 153, 6); border-radius: 30%; padding: 5px;"></i>
+                    </a>
+                  </li>
+                  
+                  
+                
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item">
+                    <a id="cotizar-link" class="nav-link" href="https://wa.me/573235305273">Cotiza Ahora Mismo</a>
+                </li>                
+                
+                <div id="mensaje" class="mensaje">¡Ven aquí y cotiza ahora!</div>
+                              
+            </ul>
+        </div>
+    </nav>
+    
+   
+
+
+
+    <!-- Sección Hero -->
+    <header id="hero-inicio" class="hero-section bg-dark text-white text-center py-5" data-aos="fade-up">
+        <style>
+            /* CSS para el contenedor de partículas */
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1; /* Esto coloca las partículas en el fondo */
+            }
+                
+        </style>
+    </head>
+    <body>
+    
+        <div id="particles-js"></div>
+    
+        <script>
+            /* Configuración de las partículas */
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 200, // Número de partículas
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#ffffff' // Color de las partículas
+                    },
+                    shape: {
+                        type: 'circle', // Forma de las partículas
+                    },
+                    opacity: {
+                        value: 0.5, // Opacidad de las partículas
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.1,
+                        }
+                    },
+                    size: {
+                        value: 7, // Tamaño de las partículas
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 10,
+                            size_min: 0.1
+                        }
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2, // Velocidad de las partículas
+                        direction: 'random',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false,
+                    }
+                },
+                interactivity: {
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: 'repulse'
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        }
+                    },
+                    modes: {
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+        </script>
+        <div class="container">
+            <h1>Soluciones confiables para techos y estructuras</h1>
+            <p>Diseños modernos y duraderos para cada espacio.</p>
+            <a href="contactoRapido.html" class="btn btn-warning">¡ Cotiza Rapido !</a>
+        </div>
+       
+    </header>
+    
+    <br>
+
+
+        
+        
+        
+
+
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-5" data-aos="fade-left">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-warehouse fa-3x mb-3"></i>
+                            <h5>Pérgolas</h5>
+                            <hr class="service-divider">
+                            <p>Diseño y construcción de pérgolas personalizadas para tu hogar.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" >
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-home fa-3x mb-3"></i>
+                            <h5>Techos</h5>
+                            <hr class="service-divider">
+                            <p>Soluciones integrales para techos que garantizan durabilidad.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" >
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hard-hat fa-3x mb-3"></i>
+                            <h5>Canoas</h5>
+                            <hr class="service-divider">
+                            <p>Canoas de alta calidad adaptadas a tus necesidades específicas.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-md-4" data-aos="fade-left" >
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x mb-3"></i>
+                            <h5>Estructuras Metálicas</h5>
+                            <hr class="service-divider">
+                            <p>Fabricación y montaje de estructuras metálicas resistentes y versátiles.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" >
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-water fa-3x mb-3"></i>
+                            <h5>Impermeabilizaciones</h5>
+                            <hr class="service-divider">
+                            <p>Servicios de impermeabilización para proteger tus espacios de la humedad.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="card mb-4 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-wrench fa-3x mb-3"></i> 
+                            <h5>Mantenimiento</h5>
+                            <hr class="service-divider">
+                            <p>Ofrecemos servicios de mantenimiento para asegurar la durabilidad y seguridad de tus techos.</p>
+                            <a href="contactoRapido.html" class="btn btn-warning mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+
+       
+
+
+
+
+
+
+
+    
+    <br><br>
+
+
+  <!-- Sección Galería -->
+<!-- Sección Galería -->
+<section id="galeria" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Galería de Proyectos</h2>
+        <div class="grid-gallery">
+            <div class="grid-item" data-aos="fade-left">
+                <img src="img/img70.jpeg" class="img-fluid" alt="Proyecto 1" data-toggle="modal" data-target="#imageModal" data-img-src="img/Cubiertas.png">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="200">
+                <img src="img/img100.jpeg" class="img-fluid" alt="Proyecto 2" data-toggle="modal" data-target="#imageModal" data-img-src="img/img11.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="400">
+                <img src="img/img91.jpeg" class="img-fluid" alt="Proyecto 3" data-toggle="modal" data-target="#imageModal" data-img-src="img/img12.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left">
+                <img src="img/img40.jpeg" class="img-fluid" alt="Proyecto 4" data-toggle="modal" data-target="#imageModal" data-img-src="img/img13.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="200">
+                <img src="img/img93.jpg" class="img-fluid" alt="Proyecto 5" data-toggle="modal" data-target="#imageModal" data-img-src="img/img14.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="400">
+                <img src="img/diseño5.jpeg" class="img-fluid" alt="Proyecto 6" data-toggle="modal" data-target="#imageModal" data-img-src="img/img10.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="400">
+                <img src="img/img73.jpeg" class="img-fluid" alt="Proyecto 6" data-toggle="modal" data-target="#imageModal" data-img-src="img/img10.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="400">
+                <img src="img/img23.jpeg" class="img-fluid" alt="Proyecto 6" data-toggle="modal" data-target="#imageModal" data-img-src="img/img10.jpeg">
+            </div>
+            <div class="grid-item" data-aos="fade-left" data-aos-delay="400">
+                <img src="img/img107.jpeg" class="img-fluid" alt="Proyecto 6" data-toggle="modal" data-target="#imageModal" data-img-src="img/img10.jpeg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para la imagen ampliada -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" class="img-fluid" id="modalImage" alt="Proyecto Ampliado">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+
+
+
+
+
+
+  <!--SECTION DE COTIZA CON NOSTROS -->
+  <section class="cotizar-con-nosotros">
+    <div class="post">
+        <div class="perfil">
+            <a href="https://www.facebook.com/profile.php?id=100089402317987&locale=es_LA" rel="noopener noreferrer">
+                <img src="img/img40.jpeg" alt="Perfil Cubiertas Naranjo Zea">
+            </a>
+            <div class="info-perfil">
+                <h3><a href="https://www.facebook.com/profile.php?id=100089402317987&locale=es_LA" rel="noopener noreferrer">Cubiertas Naranjo Zea</a></h3>
+                <p><a href="https://www.tiktok.com/@cubiertasnaranjozea" rel="noopener noreferrer">@cubiertasnaranjozea</a></p>
+            </div>
+        </div>
+        <div class="contenido">
+            <h2>¡Anímese a cotizar con nosotros!</h2>
+            <p>
+                Descubra cómo transformar su espacio con nuestros servicios de pérgolas, techos y más. 
+                Trabajamos con diseños personalizados y materiales de alta calidad para cumplir sus sueños.
+            </p>
+            <p class="destacado">
+                🔨 ¡Expertos en estructuras metálicas! 
+                🌟 Confíe en nuestra experiencia.
+            </p>
+            <a href="contactoRapido.html" class="btn-cotizar">Cotizar Ahora</a>
+        </div>
+        <div class="imagen-post">
+            <img src="img/img8.jpeg" alt="Nuestros Servicios">
+        </div>
+        <div class="acciones">
+            <button id="likeBtn">
+                <i class="fas fa-thumbs-up"></i>
+                <span id="likeCount">210mil</span> <!-- Comienza desde 1 millón -->
+            </button>
+            <button id="commentBtn">
+                <i class="fas fa-comment-dots"></i> 120mil <!-- Comienza desde 1 millón -->
+            </button>
+            
+            <a id="shareBtn" href="https://www.facebook.com/p/Cubiertas-Naranjo-Zea-100089402317987/?locale=es_LA">
+                <i class="fas fa-share"></i>
+            </a>
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+
+  
+<br><br>
+
+  <!-- Sección Testimonios -->
+  <section id="testimonios" class="py-5 text-blanco" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center mb-4">Testimonios</h2>
+        <div id="testimoniosCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="text-center">"Excelente servicio y calidad en los materiales. ¡Recomendados!"</p>
+                    <footer class="text-center">- Cliente Satisfecho</footer>
+                </div>
+                <div class="carousel-item">
+                    <p class="text-center">"Instalación rápida y profesional. ¡Estoy muy contento con mi pérgola!"</p>
+                    <footer class="text-center">- Otro Cliente</footer>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimoniosCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#testimoniosCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <style>
+        #testimonios{
+            background: linear-gradient(to right, #f8f6f6af , #080808);
+        }
+
+        .text-blanco {
+            color: white;
+        }
+
+        #testimonios h2 {
+            color: white; /* Asegura que el título también sea blanco */
+        }
+
+        #testimonios footer {
+            font-style: italic; /* Opcional, agrega estilo al footer */
+        }
+
+    </style>
+</section>
+    
+
+  <br><br>
+
+
+
+
+
+
+
+    <!-- ICONOSs -->
+
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100089402317987&locale=es_LA" target="_blank" class="social-icon facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.tiktok.com/@cubiertasnaranjozea" target="_blank" class="social-icon tiktok">
+        <i class="fab fa-tiktok"></i> <!-- Cambiado de Twitter a TikTok -->
+    </a>
+    <a href="https://www.instagram.com/cubierta_naranjo/?igsh=M3hxbWg3dWZzYzJi" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="contactoRapido.html" target="_blank" class="social-icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+
+<br><br>
+
+
+  
+    
+    
+
+
+    <br><br>
+             <!-- Sección Beneficios PORQUE ELEGIRNOS -->
+        <section class="py-5" id="beneficios" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-check-circle fa-2x mb-2"></i> <!-- Ícono de calidad -->
+                                <h5 class="card-title">Calidad Garantizada</h5>
+                                <p id="parrafo" class="card-text">Utilizamos solo los mejores materiales para garantizar la durabilidad de nuestras construcciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-paint-brush fa-2x mb-2"></i> <!-- Ícono de diseño -->
+                                <h5 class="card-title">Diseños Personalizados</h5>
+                                <p id="parrafo" class="card-text">Nos adaptamos a tus necesidades y estilo, ofreciendo soluciones únicas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-clock fa-2x mb-2"></i> <!-- Ícono de rapidez -->
+                                <h5 class="card-title">Servicio Rápido</h5>
+                                <p id="parrafo" class="card-text">Nos comprometemos a entregar tu proyecto en el menor tiempo posible sin sacrificar calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users fa-2x mb-2"></i> <!-- Ícono de asesoría -->
+                                <h5 class="card-title">Asesoría Profesional</h5>
+                                <p id="parrafo" class="card-text">Contamos con un equipo de expertos dispuestos a guiarte en cada etapa del proceso.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-leaf fa-2x mb-2"></i> <!-- Ícono de sostenibilidad -->
+                                <h5 class="card-title">Sostenibilidad</h5>
+                                <p id="parrafo" class="card-text">Utilizamos materiales ecológicos y prácticas sostenibles para cuidar el medio ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card benefit-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-shield-alt fa-2x mb-2"></i> <!-- Ícono de garantía -->
+                                <h5 class="card-title">Garantía Extendida</h5>
+                                <p id="parrafo" class="card-text">Ofrecemos una garantía prolongada para darte mayor tranquilidad y confianza en nuestros servicios.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    <br><br>
+
+    
+        
+
+            <!--PREGUNTAS FRECUENTAS -->
+            <section id="faq" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center mb-4">¿Preguntas Frecuentes?</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Qué tipos de pérgolas ofrecen?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Ofrecemos pérgolas de madera y metálicas, personalizadas a tus necesidades.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Cuánto tiempo tarda la instalación?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Generalmente, la instalación toma entre 1 y 3 días, dependiendo del tamaño del proyecto.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Qué tipo de materiales utilizan?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Utilizamos materiales de alta calidad, como madera tratada, aluminio y PVC, que garantizan durabilidad y resistencia.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        ¿Qué medidas de seguridad implementan durante la instalación?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Seguimos estrictas medidas de seguridad, incluyendo el uso de equipos de protección personal y protocolos de seguridad en el sitio de trabajo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+       
+        
+        
+
+<br><br>    <br>
+
+
+            <!--GALERIA DOSSSS -->
+            <div class="galeria" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 15px;">
+                <div class="tarjeta">
+                    <img src="img/img100.jpeg" alt="Imagen 1" onclick="abrirModal(this)">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/img79.jpeg" alt="Imagen 2" onclick="abrirModal(this)">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/img47.jpeg" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/img85.jpg" alt="Imagen 4" onclick="abrirModal(this)">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/img49.jpeg" alt="Imagen 5" onclick="abrirModal(this)">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/img58.jpeg" alt="Imagen 6" onclick="abrirModal(this)">
+                </div>
+            </div>
+            <div id="miModal" class="modal">
+                <div class="contenido-modal">
+                    <span class="cerrar" style="color: #ff000d; font-size: 30px; font-weight: bold;" onclick="cerrarModal()">&times;</span>
+                    <img id="imagenModal" src="" alt="Imagen ampliada">
+                </div>
+            </div>
+            
+
+  
+<br><br><br>
+    
+    <section id="ubicacion" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestra Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126800.43658688293!2d-75.57702576481232!3d6.251840688415389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442a82a831b2d7%3A0x701c2e1401b5443f!2sMedell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1sen!2sus!4v1612305605123!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <style>
+            #ubicacion {
+                background: linear-gradient(to right, #f8f6f6af , #080808);
+            }
+        </style>
+    </section>
+    
+
+    <br>
+
+
+    
+<!--FLECHA DE REGRESO AL INICIO-->
+<a href="index.html" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+    
+    
+    
+    
+
+    <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <!-- Información de la empresa -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Cubiertas <span class="text-warning">Naranjo</span>Zea</h5>
+                <p>&copy; 2024 Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="col-md-3 mb-3">
+                <h5>Enlaces rápidos</h5>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="contactoRapido.html">Contacto Rapído</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contactoRapido.html">Cotización</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto y Redes Sociales -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Contáctanos</h5>
+                <p class="mb-1">Tel: <a href="tel:+573235305273" class="text-warning">+57 3235305273</a></p>
+                <p>Email: <a href="mailto:info@naranjozea.com" class="text-warning">naranjofarley1@gmail.com</a></p>
+                 <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089402317987&locale=es_LA" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> <br>
+                    <a href="https://www.instagram.com/cubierta_naranjo/?igsh=M3hxbWg3dWZzYzJi" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> 
+                    <a href="https://www.tiktok.com/@cubiertasnaranjozea" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> <br>
+                </div>   
+            </div>
+
+            <!-- Horario de Atención -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Horario de Atención</h5>
+                <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                <p>Sábado: 9:00 AM - 2:00 PM</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+
+            <!-- Preguntas Frecuentes (FAQ) -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>FAQ</h5>
+                <a href="contactoRapido.html" class="text-white">¿Cómo solicitar una cotización?</a><br>
+                <a href="contactoRapido.html" class="text-white">¿Cuál es el tiempo de entrega?</a><br>
+                <a href="contactoRapido.html" class="text-white">¿Ofrecen servicio en toda Colombia?</a>
+            </div>
+
+            <!-- Testimonios -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Testimonios</h5>
+                <blockquote class="blockquote text-white">
+                    "Excelente servicio y calidad en los techos!" - <small>Juan P.</small>
+                </blockquote>
+                <blockquote class="blockquote text-white">
+                    "Gran atención y rapidez en la instalación." - <small>María G.</small>
+                </blockquote>
+            </div>
+
+            <!-- Últimas Noticias -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Últimas Noticias</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contactoRapido.html" class="text-white">Consejos para el mantenimiento de techos</a></li>
+                    <li><a href="contactoRapido.html" class="text-white">Nuevas tendencias en pérgolas</a></li>
+                    <li><a href="contactoRapido.html" class="text-white">Casos de éxito</a></li>
+                </ul>
+            </div>
+
+            <!-- Enlace de Políticas -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Políticas</h5>
+                <a href="#privacidad" class="text-white">Política de Privacidad</a><br>
+                <a href="#terminos" class="text-white">Términos y Condiciones</a>
+            </div>
+
+            <!-- Botón de WhatsApp de Asistencia Rápida -->
+            <div class="col-md-3 mb-3 text-center">
+                <h5>Asistencia Rápida</h5>
+                <a href="https://wa.me/573235305273" class="btn btn-success btn-sm move-btn">
+                    Chatea con Nosotros
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+
+       <!-- Botón de WhatsApp -->
+       <a href="https://wa.me/573235305273" class="whatsapp-button" target="_blank" 
+       title="Puedes cotizar ahora mismo 📳😜" data-bs-toggle="tooltip">
+        <i class="fab fa-whatsapp"></i>
+         </a>
+
+
+
+    <br><br>
+
+
+
+
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+                                <!-- Menú Fijo Inferior -->
+<!-- Menú existente -->
+<div id="menu-inferior">
+    <a id="icono1" class="icono-menu-inferior text-dark active" href="index.html"><i class="fas fa-home"></i></a> <!-- Inicio -->
+    <a id="icono2" class="icono-menu-inferior text-dark" href="contactoRapido.html"><i class="fas fa-file-invoice-dollar"></i></a> <!-- Cotizar -->
+    <a id="icono3" class="icono-menu-inferior text-dark" href="galeria.html"><i class="fas fa-images"></i></a> <!-- Galería -->
+    <a id="icono4" class="icono-menu-inferior" href="javascript:void(0);" onclick="toggleMenu()"><i class="fas fa-bars"></i></a> <!-- Menú -->
+</div>
+
+<!-- Menú Desplegable -->
+<div id="menu-desplegable" class="menu-desplegable">
+    <a class="menu-item" href="../html/index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a class="menu-item" href="galeria.html"><i class="fas fa-images"></i> Galería</a>
+    <a class="menu-item" href="contactoRapido.html"><i class="fas fa-file-invoice-dollar"></i> Cotizar</a>
+</div>
+
+
+
+
+<br>
+
+
+
+                                
+
+    
+    
+
+    
+
+
+
+
+
+
+
+<!-- JS de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
